@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <title>By Brittany Branson</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf8">
+</head>
+
+<body>
+  <div id="wrapper">
+  <div class="container" id="top">
+    <nav class="clearfix">
+          <a href="#top">About Me</a>
+          <a href="#weddings">Weddings</a>
+          <a href="#web">Web</a>
+          <a href="#contact">Let's Chat!</a>
+    </nav>
+  </div>
+  <div id="state">
+    <h1><span></span> by Brittany Branson</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    var occupations=["Web Development", "Wedding Art", "Arts Advocacy"]
+    setInterval(function(){
+    $("span").fadeOut(function(){
+    var occupation= occupations[Math.floor(Math.random()*occupations.length)]
+    $("span").html(occupation).fadeIn()
+  })
+
+  },3000)
+    </script>
+    <div class="container">
+      <div class="photo" id="vintageframephoto">
+        <img id="vintage" alt="photo of vintage frame guestbook painting and inspired wedding invitations" src="Images/VintageFrameInvite.jpg">
+      </div>
+      <div class="photo" id="valentineheadshot">
+        <img src="Images/ValentineHeadshot.jpg" id="valentine">
+      </div>
+      <div class="photo" id="escortchartpainting">
+        <img src="Images/EscortChartPaint.jpg" id="escort">
+      </div>
+    </div>
+    <div id="about-me-divider" class="section_divider">
+      <h2>About Me</h2>
+    </div>
+</body>
