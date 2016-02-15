@@ -19,8 +19,10 @@ nav {
 nav a {
 	color: inherit;
 	text-decoration: none;
+	/*I think I might just add this here instead:*/
+	/*margin-left: 50px;*/
 }
-
+/*I would probably just include the margin-left above*/
 nav a + a {
 	margin-left: 50px;
 }
@@ -40,6 +42,9 @@ nav a + a {
 .container div {
 	display: inline-block;
 }
+
+/*I can see you commented this out, but I would definitely avoided using float, especially multiple times
+in your CSS */
 
 /*#vintageframephoto {
 	width: 200px;
