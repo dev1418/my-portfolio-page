@@ -6,6 +6,7 @@
 </head>
 
 <body>
+  <!--I don't see a closing div tag here for wrapper-->
   <div id="wrapper">
   <div class="container" id="top">
     <nav class="clearfix">
@@ -17,11 +18,15 @@
   </div>
   <div id="state">
     <h1><span></span> by Brittany Branson</h1>
+    <!--Your script tag should not be within the center of your html body, typically its iin the head or at the very bottom of the body-->
+    <!--I like that you attempted to add jQuery into your portfolio, but I would definitely advise
+  separating this into a script.js file instead. This is important for Separation of Concerns-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
     var occupations=["Web Development", "Wedding Art", "Arts Advocacy"]
     setInterval(function(){
     $("span").fadeOut(function(){
+      // in this case, i might just have it display each of them repeating, instead of randomly? just a thought!
     var occupation= occupations[Math.floor(Math.random()*occupations.length)]
     $("span").html(occupation).fadeIn()
   })
